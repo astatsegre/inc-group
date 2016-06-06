@@ -135,13 +135,38 @@ nav li {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Roboto', Arial, sans-serif;
-    display: inline-block
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 30px;
 }
 
 nav ul {
+/*    position: relative;*/
     margin: 0px;
     padding: 0px;
     list-style: none;
+    margin-left: 115px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    background-color: #039dcf;
+    padding-left: 5px;
+    z-index: 10;
+    left: ;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
 }
 
 main {
