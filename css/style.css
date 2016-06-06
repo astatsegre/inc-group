@@ -138,26 +138,58 @@ nav li {
     display: inline-block;
     margin-top: 5px;
     margin-right: 30px;
+    width: 100;
+    margin-bottom: 10px;
+}
+
+nav > ul > li:hover > a {
+    background-color: white;
+    color: #039dcf;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav > ul > li > ul > li:hover > a {
+    background-color: white;
+    color: #039dcf;
+}
+
+nav > ul > li > ul > li > ul > li:hover > a {
+    background-color: white;
+    color: #039dcf;
 }
 
 nav ul {
-/*    position: relative;*/
     margin: 0px;
     padding: 0px;
     list-style: none;
     margin-left: 115px;
 }
 
-nav ul li {
+.directions > ul > li {
+    width: 100%
+}
+
+nav > ul > li {
     position: relative;
 }
 
 nav ul ul {
+    display: none;
     position: absolute;
     background-color: #039dcf;
     padding-left: 5px;
     z-index: 10;
-    left: ;
+    left: -118px ;
+    width: 100%;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 80px;
+    top: 0;
 }
 
 nav ul ul li {
